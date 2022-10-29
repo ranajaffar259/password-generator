@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #139050;
+  --secondary-color: #25b195;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  animation: bodycolor 14s forwards infinite;
+}
+
+@keyframes bodycolor {
+  0% {
+    background: var(--primary-color);
+  }
+
+  25% {
+    background: var(--secondary-color);
+  }
+
+  50% {
+    background: #1c824d;
+  }
+
+  70% {
+    background: #3b9767;
+  }
+
+  90% {
+    background: #00572a;
+  }
+
+  100% {
+    background: var(--primary-color);
+  }
+}
+
+body * {
+  transition: all 0.3s ease-in-out;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  background: var(--primary-color);
+  color: white;
+  text-shadow: 2px 2px 2px #454545;
+  padding: 1.2rem 0;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  box-shadow: inset 2px 2px 15px 5px greenyellow;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+h2 {
+  text-shadow: 2px 2px 2px #454545;
+  font-size: 2.3rem;
+}
+
+h4 {
+  color: white;
+  text-shadow: 2px 2px 2px #454545;
+}
+
+form {
+  padding: 5rem;
+  padding-top: 2rem;
+  background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 15px 5px #292929;
+}
+
+form:hover {
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  box-shadow: inset 2px 2px 15px 1225px #383838;
+  transform: skew(3deg, 4deg);
+  border: 10px solid #6daf6aa1;
+  animation: form 5s ease-in-out forwards infinite;
+}
+
+small {
+  color: white;
+}
+
+.hover-me {
+  animation: hoverme 1s forwards infinite;
+  color: greenyellow;
+  text-shadow: 3px 3px 3px black;
+}
+
+@Keyframes hoverme {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(88%);
+  }
+
+  75% {
+    transform: scale(98%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes form {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+
+  15% {
+    transform: scale(101%);
+  }
+
+  74% {
+    transform: scale(99%);
+  }
+
+  89% {
+    transform: scale(97%);
+  }
+
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+form:hover .title {
+  box-shadow: inset 2px 2px 15px 65px #92c841;
+  text-shadow: 3px 3px 3px black;
+}
+
+form:hover button {
+  box-shadow: inset 2px 2px 15px 65px #92c841;
+  text-shadow: 3px 3px 3px black;
+}
+
+form:hover input {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  box-shadow: inset 2px 2px 15px 65px #404040;
+}
+
+form input {
+  padding: 8px 9px;
+  border: 2px solid #92c841;
+  box-shadow: inset 1px 1px 3px 2px #92c841;
+  font-size: 1.3rem;
+  background: #ffffff;
+  text-align: center;
+  color: black;
+}
+
+.my-1 {
+  margin: 5px 0;
+}
+
+button {
+  padding: .8rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  border: 2px solid white;
+  background: linear-gradient(to bottom, green, #a0d256);
+  box-shadow: inset 1px 1px 6px 5px #a0d256;
+  transition: all 0.3s ease;
+}
+
+form h2 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  border-radius: 10px;
+}
+
+button:hover {
+  box-shadow: inset 1px 1px 6px 212px #7ea348;
+  background: linear-gradient(to bottom, green, #a0d256);
+}
+
+button:active {
+  background: linear-gradient(to right, #4d5c4d, #99ff00);
+  box-shadow: 3px 3px 9px 3px #a0d256;
+}
